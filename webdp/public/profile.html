@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="shortcut icon" type="image/x-icon" href="logoWeb.jpg">
+</head>
+<body>
+    <header class="sticky">
+        
+        <a href="#" class="logo">BharatDekho<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+
+        <ul class="navigation">
+            <li><a href="#banner"><a href="homepage.html">Home</a></a></li>
+           <li> <a href="about.html"><a href="about.html"> AboutUs</a></a></li>
+            <li><a href="#places"><a href="places.html">Places</a></li>
+            <li><a href="#reach"><a href="howtoreach.html">HowToReach</a></li>
+            <li><a href="#gallery"><a href="gal2.html">Gallery</a></li>
+            <li><a href="#contact"><a href="homepage.html">ContactUS</a></li>
+        </ul>
+    </header>
+    <br>
+    <section class="places" id="places"> 
+    <div class="title">
+        <h2 class="titleText"><span>O</span>ur<span>T</span>eam</h2>
+    </div>
+    <br>
+        <div class="cards">
+            <a style="text-decoration: none;">
+                <div class="content" id="jaipurcard">
+                    <div class="box">
+                        <div class="imgBx1">
+                            <img src="avi.jpeg">
+                        </div>
+                        <div class="text">
+                            <h3 style="margin-left: 50px;">Avinash Krishna</h3>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a style="text-decoration: none;">
+                <div class="content" id="jaipurcard">
+                    <div class="box">
+                        <div class="imgBx1">
+                            <img src="anu.jpeg">
+                        </div>
+                        <div class="text">
+                            <h3 style="margin-left: 75px;">Anushka Singh</h3>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a  style="text-decoration: none;">
+                <div class="content" id="jaipurcard">
+                    <div class="box">
+                        <div class="imgBx1">
+                            <img src="vib.jpeg">
+                        </div>
+                        <div class="text">
+                            <h3 style="margin-left: 75px;">Vibhor Gupta</h3>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a style="text-decoration: none;">
+                <div class="content" id="manalicard">
+                    <div class="box">
+                        <div class="imgBx1">
+                            <img src="kaif.jpeg">
+                        </div>
+                        <div class="text">
+                            <h3 style="margin-left: 75px;">Md Kaif Ansari</h3>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a  style="text-decoration: none;">
+                <div class="content" id="kochicard">
+                    <div class="box">
+                        <div class="imgBx1">
+                            <img src="ayu.jpeg">
+                        </div>
+                        <div class="text">
+                            <h3 style="margin-left: 70px;">Ayushi Gautam</h3>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a style="text-decoration: none;">
+                <div class="content" id="guwahaticard">
+                    <div class="box">
+                        <div class="imgBx1">
+                            <img src="faiz.jpeg">
+                        </div>
+                        <div class="text">
+                            <h3 style="margin-left: 100px;">Md Faizan</h3>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="matter">
+            <div class="desc" id="jaipurdesc">
+                <h2><span>T</span>houghts</h2>
+                <p>The work on this website started around a month ago and we all members tried our best to contribute and implement our suggestions.</p>
+                <p> We are all newbies in Web Development but with the guidance of Prashant sir we learned many new concepts about HTML,CSS,JS,REACT,MONGODB and were able to make this website.We all hope You all like it :) </p>
+                <p>With Regards</p>
+                <p>-Team</p>
+
+                <h2><span>E</span>mails of <span>M</span>embers</h2>
+                <br>
+                <p>
+                    <ul>
+                        <li>Avinash Krishna - lit2021041@iiitl.ac.in</li>
+                        <br>
+                        <li>Anushka Singh - lit2021043@iiitl.ac.in</li>
+                        <br>
+                        <li>Vibhor Gupta - lit2021014@iiitl.ac.in</li>
+                        <br>
+                        <li>Md Kaif Ansari - lit2021022@iiitl.ac.in</li>
+                        <br>
+                        <li>Ayushi Gautam - lit2021053@iiitl.ac.in</li>
+                        <br>
+                        <li>Md Faizan - lit2021026@iiitl.ac.in</li>
+                    </ul>
+                </p>
+               
+            </div>
+           
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

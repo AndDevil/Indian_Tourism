@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gal.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="sticky">
+        <a href="#" class="logo">Travel<span>.</span></a>
+        <ul class="navigation">
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#about">AboutUs</a></li>
+            <li><a href="#places">Places</a></li>
+            <li><a href="#reach">HowToReach</a></li>
+            <li><a href="#gallery" style="color: red;">Gallery</a></li>
+            <li><a href="#contact">ContactUs</a></li>
+        </ul>
+    </header>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+    <div class="full-img" id="fullimgbox">
+        <img src="img1.jpg" id="fullimg">
+        <span onclick="closeFullImg()">X</span>
+
+    </div>
+    <div class="img-gallary">
+        <img src="Guwahati1.jpg" onclick="openFullImg(this.src)">
+        <img src="Guwahati2.jpg" onclick="openFullImg(this.src)">
+        <img src="Guwahati3.jpg" onclick="openFullImg(this.src)">
+        <img src="Guwahati5.jpg" onclick="openFullImg(this.src)">
+        <img src="Jaipur1.jpg" onclick="openFullImg(this.src)">
+        <img src="Jaipur2.jpg" onclick="openFullImg(this.src)">
+        <img src="Jaipur3.jpg" onclick="openFullImg(this.src)">
+        <img src="Jaipur4.jpg" onclick="openFullImg(this.src)">
+        <img src="Jaipur5.jpg" onclick="openFullImg(this.src)">
+        <img src="Kochi1.jpg" onclick="openFullImg(this.src)">
+        <img src="Kochi2.jpg" onclick="openFullImg(this.src)">
+        <img src="Kochi3.jpg" onclick="openFullImg(this.src)">
+        <img src="Kochi4.jpg" onclick="openFullImg(this.src)">
+        <img src="Kochi5.jpg" onclick="openFullImg(this.src)">
+        <img src="Manali1.jpeg" onclick="openFullImg(this.src)">
+        <img src="Manali2.jpeg" onclick="openFullImg(this.src)">
+        <img src="Manali3.jpeg" onclick="openFullImg(this.src)">
+        <img src="Guwahati4.jpg" onclick="openFullImg(this.src)">
+    
+    </div>
+<script>
+    var fullimgbox=document.getElementById("fullimgbox");
+    var fullimg=document.getElementById("fullimg");
+
+    function openFullImg(pic){
+        fullimgbox.style.display="flex";
+        fullimg.src=pic;
+    }
+    function closeFullImg(){
+        fullimgbox.style.display="none";
+    }
+</script>
+</body>
+</html>

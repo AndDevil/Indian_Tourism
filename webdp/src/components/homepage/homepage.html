@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    <link rel="stylesheet" href="homepage.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  
+    
+</head>
+
+<body>
+    <header class="sticky">
+        <a href="#" class="logo">Travel<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#about"><a href="/about/about.html"> AboutUs</a></a></li>
+            <li><a href="#places">Places</a></li>
+            <li><a href="#reach">HowToReach</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">ContactUS</a></li>
+        </ul>
+    </header>
+
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Always choose good</h2><br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Nemo voluptatibus totam est architecto repudiandae optio dolorum beatae perspiciatis ex nam.
+                Ipsa quaerat alias dignissimos neque itrepellat?</p>
+            <a href="#" class="btn">Login</a>
+        </div>
+    </section>
+
+    <footer class="contact" id="contact">
+        <div class="title">
+           <h2 class="titleText"><span>C</span>ontact US </h2>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, libero.</p> 
+        </div>
+       <div class="contactform">
+       <h3>Send Message</h3>
+       <div class="inputbox">
+           <input type="text" placeholder="Name">
+       </div>
+       <div class="inputbox">
+           <input type="text" placeholder="Email">
+       </div>
+       <div class="inputbox">
+           <textarea placeholder="   Comment"></textarea>
+       </div>
+       <div class="inputbox">
+           <input type="submit" value="send">
+       </div>
+    </div>
+
+    </footer> 
+    <div class="copyright">
+        <p>Copyrights 2022 <a href="#">Explore India</a>. All rights reserved.</p>
+        
+    </div>
+    
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+
+    </script>
+ 
+
+</body>
+
+</html>

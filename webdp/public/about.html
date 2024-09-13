@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- <link rel="stylesheet" href="newfooter.css"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="logoWeb.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="sticky">
+        <a href="#" class="logo">BharatDekho<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="#banner"><a href="homepage.html"> Home</a></li>
+            <li><a href="#about"><a href="about.html"> AboutUs</a></a></li>
+            <li><a href="#places"><a href="places.html">Places</a></li>
+            <li><a href="#reach"><a href="howtoreach.html">HowToReach</a></li>
+            <li><a href="#gallery"><a href="gal2.html">Gallery</a></li>
+            <li><a href="#contact"><a href="homepage.html">ContactUs</a></a></li>
+        </ul>
+    </header>
+
+
+    <div class="content">
+        <div class="para">
+            <h2><span>A</span>bout Us</h2><br>
+            “Travel is the main thing you purchase that makes you more extravagant”. We, at BharatDekho, swear by this
+            and
+            put stock in satisfying travel dreams that make you perpetually rich constantly.
+            We have been moving excellent encounters for a considerable length of time through our cutting-edge planned
+            occasion
+            bundles and other fundamental travel administrations. We rouse our clients to carry on with a rich life,
+            brimming with
+            extraordinary travel encounters.
+            <br><br>The powerful inclination of Indian voyagers to travel more nowadays is something that keeps us
+            inspired to satisfy our
+            vacation necessities. Our vision to give you a consistent occasion encounter makes us one of the main visit
+            administrators in the regularly extending tourisim industry.We offer the best limits on our top-rated visit bundles to clients who pick our viable administrations over and over.
+            How about we remind you indeed that we do not expect to be your visit and travel specialists; we endeavor to be your
+            vacation accomplices until the end of time.
+        </div>
+
+        <div class="image">
+            <img src="about.png">
+        </div>
+    </div>
+
+    
+    <footer>
+        <div class="footer-content">
+            <h3>BharatDekho.</h3>
+            <p>We'll help you find your best place and to know more about our work culture and ethic you can follow us on :</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+
+            <div class="footer-bottom">
+                <p>copyright &copy;2022 <a href="#">Explore India.</a> All rigts reserved. </p>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+
+    </script>
+
+</body>
+
+</html>

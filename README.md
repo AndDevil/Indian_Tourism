@@ -30,29 +30,31 @@ Built with **HTML, CSS, JavaScript, Node.js, and Bootstrap**, the platform provi
 ---
 
 ## 📌 Installation & Setup
-1. Clone the repository  
+**1. Clone the repository**
+   
    ```bash
    git clone https://github.com/AndDevil/Travel-Website.git
    cd Travel-Website
+```
 
-2. Install dependencies
+**2. Install dependencies**
 
+```
 npm install
+```
 
 
-3. Run the application
+**3. Run the application**
 
+```
 npm start
+```
 
-
-4. Open http://localhost:3000 in your browser.
-
-
-
+**4. Open http://localhost:3000 in your browser.**
 
 ---
 
-🤝 Contributions
+## 🤝 Contributions
 
 Contributions, issues, and feature requests are welcome!
 Feel free to fork the repo and submit a pull request.
@@ -60,17 +62,14 @@ Feel free to fork the repo and submit a pull request.
 
 ---
 
-📄 License
+## 📄 License
 
 This project is licensed under the MIT License – see the LICENSE file for details.
 
 
 ---
 
-👨‍💻 Author
-
-Shrish Kumar
-
-GitHub: AndDevil
-
-LinkedIn: Shrish Kumar
+## 👨‍💻 Author
+**Shrish Kumar**  
+- GitHub: [AndDevil](https://github.com/AndDevil)  
+- LinkedIn: [Shrish Kumar](https://www.linkedin.com/in/shrish-k-83821212a/)
